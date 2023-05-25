@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.header-div {
+  display: flex;
+}
+
+header {
+  box-shadow: -0px 1px 6px 0px;
+  position: fixed;
+  display: flex;
+  background-color: hsla(0, 0%, 99%, 0.911);
+  height: 70px;
+  width: 100%;
+}
+
+.C-logo  {
+  padding: 10px;
+  border-radius: 50%;
+  height: 50px;
+}
+
+header> h1 {
+  padding-top: 20px;
+  color: rgb(2, 2, 2);
+  font-size: 20px;
+}
+
+
+a {
+  font-size: 13px;
+  font-weight: 900;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+a::after {
+  width: 0%;
+  height: 2px;
+  color: #fa7171;
+  transition: 0.5s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+._container {
+  height: 400px;
+  width: 100%;
+}
+
+.Goals {
+  display: block;
+  background-color: hsla(222, 100%, 3%, 0.959);
+  height: 300px;
+  width: 100%;
+}
+
+.row {
+  gap: 30px;
+  margin: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.goals-b {
+  flex-basis: 100%;
+  color: white;
+}
+
+.goals-b> p{
+  line-height: 1.5em;
+  padding-top: 40px;
+}
+
+.goals-b> h3{
+  border-bottom: 1px solid salmon;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.mission-b{
+  flex-basis: 100%;
+  color: white;
+}
+
+.mission-b> h3{
+  border-bottom: 1px solid salmon;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.mission-b> p {
+  padding-top: 40px;
+}
+
+
+
+.text-box {
+  left: 30px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  justify-content: center;
+  border-bottom: 2px solid rgb(247, 116, 116);
+  height: 20px;
+  width: 40%;
+}
+
+#text-m {
+  top: 20px;
+  color: rgb(8, 8, 8);
+  text-align: center;
+  font-style: normal;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-box {
+  padding-left: 30px;
+  font-size: larger;
+  margin-left: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  height: 300px;
+  width: 300px;
+}
+
+#text-g {
+  padding-bottom: 10px;
+  top: 20px;
+  color: rgb(8, 8, 8);
+  text-align: center;
+  font-style: normal;
+  font-weight: 200;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+strong {
+  font-size: 40px;
+  color: #ffffff;
+  background-color: #000000;
+  width: 30px;
+  border-radius: 2px;
+}
+
+
+.G-D {
+  border-radius: 5px;
+  background-color: hsla(222, 100%, 3%, 0.959); 
+  color: white;
+}
+
+.G-D:hover{
+  color: white;
+  text-decoration: none;
+}
+
+
+nav {
+  padding-top: 20px;
+  padding-left: 600px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #fa7171;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  left: 0;
+  bottom: -6px;
+  
+}
+
+nav ul li:hover::after{
+  width: 100%;
+}
+
+nav ul li a {
+  font-size: 11px;
+  font-weight: 500;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav ul li:hover > ul.dropdown-menu {
+  display: block;
+}
+
+ul.dropdown-menu {
+  border-top: 2px solid red;
+  font-size: 10px;
+  width: 200px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 0;
+}
+
+ul.dropdown-menu li a:hover {
+  text-align: left;
+  color: hsl(0, 0%, 4%);
+  background-color: hsl(0, 33%, 98%);
+}
+
+ul.dropdown-menu li {
+  display: block;
+}
+
+ul.dropdown-menu li a {
+  padding: 10px;
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+}
+
+._container-2 {
+  width: 100%;
+  height: 700px;
+  background-color: white;
+}
+
+._container-2> h1{
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+._container-2> h4{
+  padding-right: 70px;
+  text-align: right;
+  padding-bottom: 40px;
+  text-decoration: underline;
+}
+
+.row> img{
+  border-radius: 5px;
+  width: 500px;
+  height: 400px;
+  padding-bottom: 20px;
+}
+
+.fa-brands {
+  padding-left: 20px;
+  color: rgb(247, 13, 13);
+  width: 30px;
+}
+
+.WCG{
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #000000;
+  width: 20px;
+  border-radius: 2px;
+}
+
+.L-bt{
+  border-radius: 5px;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+  background-color: hsla(222, 100%, 3%, 0.959);;
+}
+
+.L-bt:hover{
+  text-decoration: underline;
+}
+
+
+._container-3{
+  width: 100%;
+  height: 500px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+._container-3>h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: 300;
+}
